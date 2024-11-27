@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Unbounded", sans-serif;
+}
+
+.nav {
+    background-color: grey;
+    padding: 5px 0;
+}
+
+.form-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.input {
+    width: 66%;
+    height: 24px;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-image: url(/img/Волтер\ Вайт\ на\ престоле.jpg);
+    background-size: cover;
+    /* background-position: 0 -150px; */
+}
+
+.menu-links {
+    position:absolute;
+    display: flex;
+    gap: 32%;
+    bottom: 18px;
+    justify-content: center;
+}
+
+.menu__name {
+    font-size: 2em;
+    color: white;
+    padding-top: 50px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.menu-links a:first-child {
+    color:aqua
+}
+
+.main {
+    display: flex;
+    width: 95%;
+    margin: 25px auto;
+    gap: 20px;
+}
+
+.main__left {
+    display: flex;
+    width: 50%;
+    padding: 5px;
+    background-color:#FFFAFA;
+
+}
+
+.main__left-two {
+    width: 50%;
+    object-fit: cover;
+    max-height: 970px;
+}
+
+.main__left-one {
+    width: 50%;
+}
+
+.left-head {
+    font-size: 20px;
+    padding: 15px 5px 10px 7px;
+    font-weight: normal;
+}
+
+.left-text {
+    padding: 0 7px;
+    font-size: 13px;
+}
+
+.main__right {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main__right-row {
+    height: 25%;
+    background-color:#FFFAFA;
+}
+
+.right-img {
+    width: 285px;
+    height: 60px;
+    object-fit: cover;
+    padding: 7px;
+}
+
+.podmain {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.right-text {
+    font-size: 10px;
+    padding: 0 10px 10px 10px;
+}
+
+.right-head {
+    padding: 0 5px 10px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .main__left {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__right {
+        width: 100%;
+    }
+    .menu-links {
+        gap: 20%;
+    }
+    .footer {
+        font-size: 10px;
+    }
+    .podmain {
+        flex-direction: column;
+    }
+    .main__left-one {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        background-image: none;
+        height: 80px;   
+    }
+    .menu__name {
+        color: black;
+        font-size: 1.5em;
+        padding-top: 7px;
+    }
+    .menu-links a {
+        color: black;
+        font-size: 1em;
+    }
+    .menu-links {
+        bottom: -15px;
+        flex-wrap: wrap;
+    }
+
+}
